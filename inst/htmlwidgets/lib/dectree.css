@@ -1,0 +1,54 @@
+.decistree .node {
+  cursor: pointer;
+}
+
+.decistree .node rect.nonleaf {
+  fill: rgb(150,140,109);
+}
+
+.decistree .node.active rect.nonleaf {
+  fill: rgb(220,105,0);
+}
+
+.decistree .node text {
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.decistree .halo {
+  stroke: #fff;
+  stroke-width: 3px;
+}
+
+.decistree .link {
+  fill: none;
+  stroke: rgb(234,232,226);
+}
+
+/*   path.active {
+  stroke: rgb(255,182,0);
+}
+*/  
+div.tooltip-decistree {	
+  position: absolute;
+  text-align: left;
+  width: 300px;
+  /*height: 70px;*/
+  padding: 10px;
+  font-size: 12px;
+  background: rgb(150,140,109);
+  color: #fff;
+  pointer-events: none;
+}
+
+div.tooltip-decistree p.popup-head {
+  font-weight: bold;
+  line-height: 120%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+div.tooltip-decistree p.popup-body {
+  line-height: 100%;
+  margin: 0;
+}
